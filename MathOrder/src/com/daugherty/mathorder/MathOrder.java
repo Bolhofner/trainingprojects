@@ -1,6 +1,6 @@
 package com.daugherty.mathorder;
 
-public class Main {
+public class MathOrder {
 
     public static void main(String[] args) {
         int valA = 21;

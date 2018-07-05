@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CalcEngine/CalcEngine.iml" filepath="$PROJECT_DIR$/CalcEngine/CalcEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello World/Hello World.iml" filepath="$PROJECT_DIR$/Hello World/Hello World.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MathOrder/MathOrder.iml" filepath="$PROJECT_DIR$/MathOrder/MathOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Organized/Organized.iml" filepath="$PROJECT_DIR$/Organized/Organized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Type Conversion/Type Conversion.iml" filepath="$PROJECT_DIR$/Type Conversion/Type Conversion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/classlecture/classlecture.iml" filepath="$PROJECT_DIR$/classlecture/classlecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+    </modules>
+  </component>
+</project>
