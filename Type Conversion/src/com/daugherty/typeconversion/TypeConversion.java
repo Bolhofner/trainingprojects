@@ -1,6 +1,6 @@
 package com.daugherty.typeconversion;
 
-public class Main {
+public class TypeConversion {
 
     public static void main(String[] args) {
             float floatVal = 1.0f;

@@ -1,4 +1,4 @@
-public class Main {
+public class HelloWorld {
 /*
 line one
 line two
