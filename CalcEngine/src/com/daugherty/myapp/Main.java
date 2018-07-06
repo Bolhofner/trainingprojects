@@ -4,9 +4,12 @@ import com.daugherty.calcengine.Adder;
 import com.daugherty.calcengine.CalculateBase;
 import com.daugherty.calcengine.CalculateHelper;
 import com.daugherty.calcengine.Divider;
+import com.daugherty.calcengine.DynamicHelper;
 import com.daugherty.calcengine.InvalidStatementException;
 import com.daugherty.calcengine.MathEquation;
+import com.daugherty.calcengine.MathProcessing;
 import com.daugherty.calcengine.Multiplier;
+import com.daugherty.calcengine.PowerOf;
 import com.daugherty.calcengine.Subtracter;
 
 public class Main {
@@ -16,27 +19,23 @@ public class Main {
 //        double[] rightVals = {50.0d, 92.0d, 17.0d, 3.0d};
 //        char[] opCodes = {'d', 'a', 's', 'm'};
 //        double[] results = new double[opCodes.length];
+//        use MathEquation();
+//        use CalculateBase();
+//        use CalculateHelper();
+
 
         String[] statements = {
-                "add 1.0",               //ERROR: incorrect number of values
-                "add xx 25.0",          //ERROR: non-numeric data
-                "addX 0.0 0.0",          //ERROR: invalid command
-                "divide 100.0 50.0",    //100.0 / 50.0 = 2.0
                 "add 25.0 92.0",        //25.0 + 92.0 = 117.0
-                "subtract 225.0 17.0",  //225.0 -17.0 = 208.0
-                "multiply 11.0 3.0"     //11.0 * 3.0 = 33.0
-        };
+                "power 5.0 2.0"         //5.0 ^ 2.0 = 25.0
 
-        CalculateHelper helper = new CalculateHelper();
+        };
+        DynamicHelper helper = new DynamicHelper(new MathProcessing[] {
+                new Adder(),
+                new PowerOf()
+        });
         for (String statement:statements) {
-            try {
-                helper.process(statement);
-                System.out.println(helper);
-            } catch (InvalidStatementException e) {
-                System.out.println(e.getMessage());
-                if(e.getCause() != null)
-                    System.out.println("  Original exception: " + e.getCause().getMessage());
-            }
+            String output = helper.process(statement);
+            System.out.println(output);
         }
 
 
